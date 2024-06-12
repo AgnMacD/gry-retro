@@ -1,0 +1,121 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+    text-align: center; /* Wyrównanie do środka */
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    margin-top: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+}
+
+/* Formularz kontaktowy */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Wyrównanie do środka */
+}
+
+form label, form input, form textarea, form button {
+    margin-bottom: 15px;
+    width: 100%; /* Dodane dla lepszego wyrównania */
+    max-width: 400px; /* Maksymalna szerokość formularza */
+}
+
+form input, form textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center; /* Wyrównanie do środka */
+    background-color: #fff8e1; /* Kolor tła */
+}
+
+form button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #5d4037; /* Brązowy kolor */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #3e2723; /* Ciemniejszy brąz */
+}
+
+/* Sekcje strony */
+section h2 {
+    color: #5d4037; /* Brązowy kolor */
+    margin-bottom: 10px;
+}
+
+section p, section ul {
+    color: #333; /* Czarny kolor tekstu */
+    text-align: center; /* Wyrównanie do środka */
+    margin-bottom: 20px;
+}
+
+section ul {
+    list-style: none;
+    padding: 0;
+}
+
+section ul li {
+    margin-bottom: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
