@@ -1,0 +1,5 @@
+User-agent: Siteliner
+Allow: /
+
+User-agent: *
+Disallow:
