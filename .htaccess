@@ -2,3 +2,10 @@
     Require all granted
     Require ip 46.4.250.49 46.4.250.50 46.4.250.51 46.4.250.52 89.64.18.114
 </RequireAll>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    # Allow access for Siteliner user agent
+    RewriteCond %{HTTP_USER_AGENT} ^Mozilla/5\.0\ \(compatible;\ Siteliner/1\.0;\ \+http://www\.siteliner\.com/bot\) [NC]
+    RewriteRule .* - [L]
+</IfModule>
